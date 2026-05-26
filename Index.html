@@ -739,18 +739,6 @@ section { padding: 100px 0; position: relative; }
 .conf-loc { font-size: 13px; color: var(--text-soft); font-style: italic; font-family: var(--font-display); }
 .conf-paper { font-size: 13.5px; line-height: 1.5; margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--line); }
 
-/* ====== PROJECTS ====== */
-.proj-grid { display: grid; gap: 10px; }
-.proj { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius-lg); padding: 20px 26px; display: grid; grid-template-columns: 1fr 120px 110px; gap: 24px; align-items: center; transition: all 0.2s ease; }
-@media (max-width: 768px) { .proj { grid-template-columns: 1fr auto; gap: 12px 16px; padding: 18px 22px; } .proj-amount { text-align: right; align-self: start; } .proj-status { grid-column: 1 / -1; text-align: left; } }
-@media (max-width: 480px) { .proj { grid-template-columns: 1fr; padding: 18px 20px; } .proj-amount { text-align: left; } }
-.proj:hover { border-color: var(--orange); }
-.proj-title { font-family: var(--font-display); font-size: 16.5px; font-weight: 700; line-height: 1.3; margin-bottom: 4px; }
-.proj-client { font-size: 12.5px; color: var(--text-soft); }
-.proj-amount { font-family: var(--font-mono); font-size: 14px; color: var(--orange); font-weight: 600; text-align: right; }
-.proj-status { font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 600; text-align: right; color: var(--text-soft); white-space: nowrap; }
-.proj-status::before { content: '●'; color: #4caf50; margin-right: 4px; }
-
 /* ====== FELLOWSHIPS ====== */
 .fel-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; }
 @media (max-width: 480px) { .fel-grid { grid-template-columns: 1fr; } }
